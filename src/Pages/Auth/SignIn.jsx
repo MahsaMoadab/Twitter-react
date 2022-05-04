@@ -16,20 +16,9 @@ import { Button } from '@mui/material';
 import { toast } from 'react-toastify';
 import { signInApi } from '../../api/api_auth';
 import { useNavigate } from 'react-router-dom';
-// import { TweetProvider } from "../context/TweetContext";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import rtlPlugin from 'stylis-plugin-rtl';
-import { prefixer } from 'stylis';
-import { CacheProvider } from '@emotion/react';
-import createCache from '@emotion/cache';
-const theme = createTheme({
-    direction: 'rtl', // Both here and <body dir="rtl">
-});
 
-const cacheRtl = createCache({
-    key: 'muirtl',
-    stylisPlugins: [prefixer, rtlPlugin],
-});
+
+
 const SignIn = (props) => {
     const [passwordLogin, setPasswordLogin] = useState({
         amount: '',
@@ -99,60 +88,53 @@ const SignIn = (props) => {
 
     return (
         <>
-            <CacheProvider value={cacheRtl}>
-                <ThemeProvider theme={theme}>
-                    <div id={'loginPage'} className={styles.loginPage}>
-                        <Grid container item className={styles.loginBox}>
-                            <Grid item className={styles.contentBox}>
-                                <Grid className={styles.logo} container>
-                                    <img src={'/images/twitter-logo.png'} alt={'twitter-logo'} />
-                                    <Typography>
-                                        توییتر فارسی
-                                    </Typography>
-                                    |
-                                    <Typography>
-                                        ورود
-                                    </Typography>
-                                </Grid>
-                                <TextField id={'usernameLogin'} className={styles.textField} value={usernameLogin} onChange={handleChangeUsername} label="نام کاربری" variant="outlined" />
-                                <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
-                                    <InputLabel htmlFor="passwordLogin">رمز عبور</InputLabel>
-                                    <OutlinedInput
-                                        id="passwordLogin"
-                                        type={passwordLogin.showPassword ? 'text' : 'password'}
-                                        value={passwordLogin.password}
-                                        onChange={handleChange('password')}
-                                        endAdornment={
-                                            <InputAdornment position="end">
-                                                <IconButton
-                                                    aria-label="toggle password visibility"
-                                                    onClick={handleClickShowPassword}
-                                                    onMouseDown={handleMouseDownPassword}
-                                                    edge="end"
-                                                >
-                                                    {passwordLogin.showPassword ? <VisibilityOff /> : <Visibility />}
-                                                </IconButton>
-                                            </InputAdornment>
-                                        }
-                                        label="Password"
-                                    />
-                                </FormControl>
-
-                                <Button className={styles.btnLogin} onClick={handelLogin} variant="contained">ورود</Button>
-                                <Button onClick={props.showSignUp} className={styles.linkSignUp}>
-                                    حساب کاربری ندارید؟ ثبت نام
-                                </Button>
-                            </Grid>
-                            <Grid item className={styles.contentBox}>
-                                <img className={styles.imgFlex} src={"/images/login-page.jpg"} alt={""} />
-                            </Grid>
+            <div id={'loginPage'} className={styles.loginPage}>
+                <Grid container item className={styles.loginBox}>
+                    <Grid item className={styles.contentBox}>
+                        <Grid className={styles.logo} container>
+                            <img src={'/images/twitter-logo.png'} alt={'twitter-logo'} />
+                            <Typography>
+                                توییتر فارسی
+                            </Typography>
+                            |
+                            <Typography>
+                                ورود
+                            </Typography>
                         </Grid>
-                    </div>
-                </ThemeProvider>
-            </CacheProvider>
+                        <TextField id={'usernameLogin'} className={styles.textField} value={usernameLogin} onChange={handleChangeUsername} label="نام کاربری" variant="outlined" />
+                        <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                            <InputLabel htmlFor="passwordLogin">رمز عبور</InputLabel>
+                            <OutlinedInput
+                                id="passwordLogin"
+                                type={passwordLogin.showPassword ? 'text' : 'password'}
+                                value={passwordLogin.password}
+                                onChange={handleChange('password')}
+                                endAdornment={
+                                    <InputAdornment position="end">
+                                        <IconButton
+                                            aria-label="toggle password visibility"
+                                            onClick={handleClickShowPassword}
+                                            onMouseDown={handleMouseDownPassword}
+                                            edge="end"
+                                        >
+                                            {passwordLogin.showPassword ? <VisibilityOff /> : <Visibility />}
+                                        </IconButton>
+                                    </InputAdornment>
+                                }
+                                label="Password"
+                            />
+                        </FormControl>
 
-
-
+                        <Button className={styles.btnLogin} onClick={handelLogin} variant="contained">ورود</Button>
+                        <Button onClick={props.showSignUp} className={styles.linkSignUp}>
+                            حساب کاربری ندارید؟ ثبت نام
+                        </Button>
+                    </Grid>
+                    <Grid item className={styles.contentBox}>
+                        <img className={styles.imgFlex} src={"/images/login-page.jpg"} alt={""} />
+                    </Grid>
+                </Grid>
+            </div>
         </>
     );
 

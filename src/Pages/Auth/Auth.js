@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-import {
-  Button,
-  Container,
-}
-  from "@material-ui/core";
+import {Container} from "@material-ui/core";
 import styles from '../../styles/Style.module.css';
 import SignUp from './SignUp';
 
@@ -24,8 +20,6 @@ const Auth = () => {
     <>
 
       <div className={styles.root}>
-
-
         <Container className={styles.container} maxWidth="md">
 
           <SwitchTransition mode={'out-in'}>
@@ -36,11 +30,7 @@ const Auth = () => {
               }}
               classNames={styles.fade}
             >
-              {state ? 
-              <SignIn id={"loginPage"} showSignUp={handelShowSignUp} /> 
-
-              : 
-              <SignUp id={"signUpPage"} showSignIn={handelShowSignIn} />}
+              {state ? <SignIn id={"loginPage"} showSignUp={handelShowSignUp} /> : <SignUp id={"signUpPage"} showSignIn={handelShowSignIn} />}
             </CSSTransition>
           </SwitchTransition>
         </Container>
