@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Shabnam';
+    src: 
+         url('../fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+  }
+
+
+
+  html,body,*{
+      padding: 0;
+      margin: 0;
+      direction: rtl ;
+      font-family: 'Shabnam' !important;
+  }
+
+  .editable:empty:before{
+      content: attr(data-placeholder) !important;
+      color: #808080 !important;
+
+  }
+
+  a{
+      color: unset;
+      text-decoration: none;
+      width: 100%;
+  }
+
+
+.MuiInputLabel-formControl {
+    top: 0 !important;
+    right: 0px !important;
+    position: absolute !important;
+    transform: translate(-6px, 19px) scale(1) !important;
+}
+
+.MuiInputLabel-outlined {
+    transform: translate(-13px, 20px) scale(1) !important;
+}
+.PrivateNotchedOutline-legendLabelled-3 {
+    text-align: right !important;
+}
+
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(-13px, -6px) scale(0.75) !important;
+}
+
+.MuiInputLabel-shrink {
+    transform: translate(0, 1.5px) scale(0.75) !important;
+    transform-origin: top right !important;
+}
+
+.MuiInputLabel-root {
+    display: block;
+    transform-origin: top right !important;
+  }
+
+  .MuiFormControl-root{
+      width: 15em !important;
+      height: 3em !important;
+  }
+
+  .MuiOutlinedInput-root {
+      border-radius: 1em !important;
+  }
+
+  #loginPage,#signUpPage{
+      transition: all 0.5s;
+  }
+
+  input#usernameSignup,
+  input#passwordSignup,
+  input#usernameLogin,
+  input#passwordLogin{
+      text-align: left !important;
+      direction: ltr !important;
+  }
+
+
+  input:valid{
+      background: #fff !important;
+  }
+
+  input:-webkit-autofill {
+
+    background: #fff !important;
+
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color:#000 !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important; 
+}
+input:-moz-autofill {
+    -moz-text-fill-color:#000 !important;
+    -moz-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input:-o-autofill {
+    -o-text-fill-color:#000 !important;
+    -o-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input:-khtml-autofill {
+    -khtml-text-fill-color:#000 !important;
+    -khtml-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+input:focus:-webkit-autofill {
+    -webkit-text-fill-color:#000 !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input:focus:-moz-autofill {
+    -moz-text-fill-color:#000 !important;
+    -moz-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input:focus:-o-autofill {
+    -o-text-fill-color:#000 !important;
+    -o-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input:focus:-khtml-autofill {
+    -khtml-text-fill-color:#000 !important;
+    -khtml-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.hashtagLink{
+    color:#5ea9dd;
+    text-decoration:none;
+    overflow-wrap: anywhere;
+}
+
+.MuiCircularProgress-colorPrimary{
+    color: #49abf1 !important;
+}
+
+.jss3 {
+    width: auto;
+    height: 11px;
+    display: block;
+    padding: 0;
+    font-size: 0.75em;
+    max-width: 0.01px;
+    text-align: right !important;
+    transition: max-width 50ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    visibility: hidden;
+}
+
+.label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .modes {
+    margin-bottom: 1rem;
+  }
+  
+  .buttonContainer {
+    margin-bottom: 0.5rem;
+  }
+  
+  .fade-enter .btn {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  .fade-enter-active .btn {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .fade-exit .btn {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .fade-exit-active .btn {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .fade-enter-active .btn,
+  .fade-exit-active .btn {
+    transition: opacity 500ms, transform 500ms;
+  }
+  

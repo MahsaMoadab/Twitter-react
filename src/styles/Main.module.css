@@ -1,0 +1,310 @@
+.root {
+    /* background: '#e6e6e6'; */
+    height: 100%;
+}
+
+.divider {
+    background-color: #7ebaee;
+    filter: opacity(0.4);
+
+}
+
+.newTweet {
+    padding: 18px;
+    display: flex;
+    background-color: #FFF;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    margin-bottom: 0.1em;
+    height: 9.4em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profiles {
+    width: max-content;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    filter: drop-shadow(0px 1px 5px rgba(0, 0, 0, 0.15));
+}
+
+.tweetInput {
+    margin: 0 1rem;
+    outline: none;
+    border: none;
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.tweetInput:focus {
+    outline: unset;
+}
+
+.tweetButton {
+    color: #fff !important;
+    border-radius: 1.5rem !important;
+    background: #07B0F3 !important;
+    font-family: "Shabnam" !important;
+    min-height: 35px !important;
+    height: 35px !important;
+    line-height: 1rem !important;
+    min-width: 6rem !important;
+    font-weight: bold !important;
+    height: 40px !important;
+}
+
+.tweetButton:hover {
+    background: #7b7878;
+}
+
+.btns {
+    /* margin-top: 1rem; */
+    align-items: center;
+}
+
+.iconButton {
+    margin: 0 1rem !important;
+    padding: 0.3em !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 226, 226, 0.58) !important;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 15px !important;
+}
+
+
+
+.tweetpic {
+    width: 100%;
+}
+
+
+.tweetPicLike {
+    color: #e93a3a;
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    border: 0.5px solid #3337;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.tweetPicNotLike {
+    width: 100%;
+}
+
+.iconButtonLike {
+    padding: unset;
+    margin-right: 0.5rem !important;
+    padding: 0.3em !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 226, 226, 0.58) !important;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 15px !important;
+}
+
+.iconButtonReTweet {
+    padding: unset;
+    margin-right: 1rem !important;
+    padding: 0.3em !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    background: #fff !important;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 15px !important;
+}
+
+.likeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 1rem; */
+    flex-direction: row-reverse;
+}
+
+.likecount {
+    margin: 0 0.2rem;
+    color: #777676;
+}
+
+.tweetLists {
+    overflow-y: auto;
+    height: 50%;
+    padding-top: 0.4em;
+}
+
+.contentsMain {
+    padding-top: 0.3em;
+    overflow-y: auto;
+    height: 90%;
+}
+
+
+.tweetLists::-webkit-scrollbar-track,
+.contentsMain::-webkit-scrollbar-track {
+    webkitbox-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+    background-color: #D0D6DA;
+
+}
+
+.tweetLists::-webkit-scrollbar,
+.contentsMain::-webkit-scrollbar {
+    width: 9px;
+    background-color: #D0D6DA;
+    border-radius: 7px;
+}
+
+.tweetLists::-webkit-scrollbar-thumb,
+.contentsMain::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #04A3ED;
+}
+
+.tweetItem {
+    margin: 0 0.3rem;
+    margin-bottom: 0.7rem;
+    padding: 8px 15px;
+    display: flex;
+    background-color: #FFF;
+    flex-direction: column;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.notFound {
+    font-size: 0.7em;
+    text-align: center;
+    padding: 1.5em;
+    color: #5f5d5d;
+}
+
+.uploatImage {
+    width: 9.2em;
+    height: 7em;
+    border-radius: 1em;
+    /* padding-top: 0.2em; */
+    position: absolute;
+    bottom: 18px;
+    right: 9%;
+}
+
+.tweetImage {
+    width: 10.2em;
+    height: 7.5em;
+    border-radius: 1em;
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.10));
+    padding-top: 0.5em;
+}
+
+.tweetItemName {
+    font-weight: 600 !important;
+    margin: 0 1rem !important;
+}
+
+
+.tweetItemId {
+    color: #ddd !important;
+    direction: ltr !important;
+    text-align: left !important;
+    /* padding-top: 0.2rem !important; */
+}
+
+.tweetColumn {
+    flex: 1;
+}
+
+.tweetText {
+    margin: 0.75rem 0.5rem 0.3rem 0.5rem !important;
+    text-align: justify !important;
+}
+
+.divImage {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-bottom: 0.5em !important;
+}
+
+.hashtagLink {
+    color: #5ea9dd;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.header {
+    padding: 10px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4em;
+    height: 6%;
+}
+
+.homeTitle {
+    color: #000;
+    font-size: 1.4rem !important;
+    font-weight: 800 !important;
+    padding: 0.2rem;
+}
+
+
+/* layout styles */
+.rootlayout {
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    /* height: '100%; */
+}
+
+.mainPart {
+    width: 100%;
+    background: #fff;
+    flex: 1;
+}
+
+.divider {
+    width: 3px !important;
+    height: 100% !important;
+    background: #a9cffd30;
+}
+
+.content {
+    flex: 1;
+    background: #F4F8FB;
+    padding: 0.4em 0.2em;
+}
+
+.waiting{
+    background: #F4F8FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    color: #5f5d5d;
+
+}
+
+.waiting p{
+    margin-top: 1rem;
+}

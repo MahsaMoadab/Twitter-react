@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Shabnam';
+    src: 
+         url('../fonts/Shabnam.ttf') format('ttf');
+    font-weight: normal;
+  }
+
+  
+  html,body,*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    font-family: 'Shabnam' !important;
+}
+
+
+.root {
+    background: #0087ec1a;
+    width: 100%;
+    height:  100vh ;
+    display:  flex ;
+    align-items:  center ;
+    justify-content:  center ;
+}
+.container {
+    background:  #fff ;
+    height:  37em ;
+    border-radius:  2em ;
+    box-shadow:  0px 2px 4px rgba(0, 0, 0, 0.25) ;
+
+}
+.imgFlex {
+    width:  26em ;
+}
+.loginPage {
+    width:  100% ;
+    height:  100%;
+    transition: all 0.5s;
+}
+.loginBox{
+    justify-content:space-between ;
+    height:  100% ;
+
+}
+.contentBox {
+    width: 50% ;
+    justify-content:  center ;
+    align-items:  center ;
+    display:  flex ;
+    flex-direction:  column ;
+}
+
+.textField{
+    /* direction: ltr;
+    text-align: left; */
+    margin: 1.5em auto !important;
+}
+
+.btnLogin{
+    width: 17em;
+    height: 3.5em;
+    margin: 1.5em auto !important;
+    font-weight: bold !important;
+    border-radius: 1em !important;
+}
+.logo{
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    color: #5ea9dd;
+ }
+
+.logo img{
+   width: 2.3em;
+   height: 2.3em; 
+}
+.logo p{
+   color: #5ea9dd;
+   padding: 0 0.5em;
+   font-weight: bold;
+ }
+
+ .linkSignUp{
+     font-size: 0.9rem;
+     color: #424241;
+     cursor: pointer;
+ }
+
+ .signUpPage{
+     /* display: none; */
+     width:  100% ;
+     height:  100%;
+     transition: all 0.5s;
+ }
+
+ .label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .modes {
+    margin-bottom: 1rem;
+  }
+  
+  .buttonContainer {
+    margin-bottom: 0.5rem;
+  }
+  
+  .fade-enter .btn {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  .fade-enter-active .btn {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .fade-exit .btn {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  .fade-exit-active .btn {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .fade-enter-active .btn,
+  .fade-exit-active .btn {
+    transition: opacity 500ms, transform 500ms;
+  }
+  

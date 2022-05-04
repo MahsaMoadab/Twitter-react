@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Shabnam';
+    src:
+        url('../fonts/Shabnam.ttf') format('ttf');
+    font-weight: normal;
+}
+
+
+html,
+body,
+* {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    font-family: 'Shabnam' !important;
+}
+
+.rootLeft {
+    width: 23%;
+    padding: 1.5rem 0.8rem;
+}
+
+.profileImg {
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+}
+
+.backProfile {
+    background: #04A8F5;
+    padding: 0.18em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.uploadProfile {
+    position: absolute;
+    width: 1.4em;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.userText {
+    font-size: 1.2rem !important;
+    color: #000;
+    font-weight: bold !important;
+}
+
+.logout {
+    position: absolute;
+    width: 1em;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+}
+
+.usenameText {
+    color: #777676;
+    direction: ltr;
+    text-align: left;
+}
+
+.proText {
+    /* margin: 0 0.7rem; */
+    margin-top: 0.3rem;
+    direction: ltr;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding: 0 0.8rem;
+    justify-content: center;
+}
+
+.twitterLists {
+    /* margin: 0 1.5em; */
+    margin-top: 3rem !important;
+    background: rgba(0, 135, 236, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+}
+
+.twitterItem {
+    padding: 0.3em 1em !important;
+    width: 90%;
+    background: #FFFFFF !important;
+    box-shadow: 0px 0px 1px rgb(0 0 0 / 25%) !important;
+    border-radius: 21px !important;
+    border: unset !important;
+    margin: 0.2em 0.5em !important;
+}
+
+.divider {
+    width: 100%;
+}
+
+.items {
+    padding: 1px;
+    align-items: center;
+}
+
+.twitterTitle {
+    font-size: 1.2rem !important;
+    color: #000;
+    font-weight: bold !important;
+    margin: 0.3rem 1rem !important;
+    padding: 0.5em 0;
+}
+
+.twitterTitleIcon {
+    width: 1.4em;
+    height: 1.5em;
+    vertical-align: middle;
+    margin: 0 0.2em;
+}
+
+.itemImg {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    background: #ECEDED;
+    padding: 0.2em;
+}
+
+.tweetUsers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemText {
+    margin: 0 0.5rem !important;
+    margin-top: 0.3rem !important;
+}
+
+.itemTitle {
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+    color: #000;
+    text-align: right;
+}
+
+.itemId {
+    color: #777676;
+    direction: ltr;
+    text-align: right;
+}
+
+.myProfiles {
+    padding: 0.7rem 0.9rem;
+    background: rgba(0, 135, 236, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    position: relative;
+
+}
+
+.anchorMenuStyle {
+    width: 10em;
+}
+
+.bestTweeter {
+
+    height: 16.5em;
+    overflow-y: auto;
+    padding-bottom: 0.05em;
+
+}
+
+.bestTweeter::-webkit-scrollbar-track {
+    webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #00000000;
+}
+
+
+.bestTweeter::-webkit-scrollbar {
+    width: 5px;
+    background-color: #00000000;
+}
+
+.bestTweeter::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #00000000;
+}
+
+
+
+
+.rightSidebar {
+    background: #fff;
+    width: 16%;
+    padding: 0.5em;
+}
+
+.aLink {
+    text-decoration: none !important;
+}
+
+.logoType {
+    padding: 0.5em;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgLogo {
+    width: 3.5em;
+    height: 3em;
+    vertical-align: middle;
+    margin: 0 0.5em;
+}
+
+.typography {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: #1D9BF0;
+
+    text-shadow: 0px 0px 4px #24C3F7;
+}
+
+.typohashtag {
+    margin-top: 1em !important;
+    margin-bottom: 0.4em !important;
+    text-align: center !important;
+    font-weight: 900 !important;
+    font-size: 1.2rem !important;
+    color: #000;
+}
+
+.hashtagh {
+    border: 2px solid #000;
+    background: #fff;
+    padding: 0.1em;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 0.5em;
+    margin: 0 0.38em;
+}
+
+.hashtaghImg {
+    width: 1.6em;
+    height: 1.6em;
+    vertical-align: middle;
+    margin: 0 0.6em;
+}
+
+.btnHastag {
+    width: 100%;
+    padding: 0.7em !important;
+    justify-content: start !important;
+    margin: 0.1em 0 !important;
+    align-items: flex-start !important;
+}
+
+.boxHashTags {
+    align-items: center;
+    height: 46%;
+    overflow-y: auto;
+
+    width: 85% !important;
+    margin-right: auto !important;
+
+}
+
+.boxHashTags::-webkit-scrollbar-track {
+    webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+    border-radius: 5px;
+    background-color: #00000000;
+}
+
+
+.boxHashTags::-webkit-scrollbar {
+    width: 5px;
+    background-color: #00000000;
+}
+
+.boxHashTags::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .0);
+    background-color: #00000000;
+}
